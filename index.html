@@ -3,55 +3,49 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>翀扬的成长日记</title>
+<title>翀扬的成长手记 | 简约版</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Microsoft YaHei",sans-serif}
-body{background:#fdf6f0;color:#444;line-height:1.7}
-header{background:linear-gradient(135deg,#ff9bbb,#ffb3ba);color:#fff;padding:50px 20px;text-align:center;border-radius:0 0 30px 30px;box-shadow:0 4px 20px rgba(255,179,186,0.3)}
-header h1{font-size:32px;margin-bottom:8px}
-header p{font-size:16px;opacity:.9}
-.container{max-width:760px;margin:0 auto;padding:30px 20px}
-.section{margin-bottom:40px}
-.section h2{font-size:22px;color:#ff7b9c;margin-bottom:16px;padding-left:10px;border-left:5px solid #ffb3ba}
-.card{background:#fff;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,0.05);padding:20px;margin-bottom:16px}
-.card .date{color:#ff7b9c;font-size:14px;font-weight:bold;margin-bottom:6px}
-.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.photo-grid img{width:100%;height:160px;object-fit:cover;border-radius:14px}
-footer{text-align:center;padding:30px 20px;color:#aaa;font-size:14px;background:#fff;border-radius:30px 30px 0 0}
+/* 基础样式 */
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,Microsoft YaHei,sans-serif}
+body{background:#f8f9fa;color:#333;line-height:1.6;padding-bottom:50px}
+/* 头部样式 */
+header{background:#e8f4f8;padding:35px 20px;text-align:center;border-bottom:1px solid #dee2e6}
+header h1{font-size:28px;color:#2d3748;margin-bottom:8px;font-weight:400}
+.subtitle{font-size:14px;color:#718096}
+/* 容器 */
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+/* 日更卡片 */
+.update-card{background:#fff;padding:25px;margin-bottom:24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.card-date{color:#4299e1;font-size:13px;margin-bottom:16px;letter-spacing:0.5px}
+.card-photo{width:100%;height:240px;object-fit:cover;border-radius:4px;margin-bottom:16px}
+.card-text{font-size:15px;color:#4a5568;line-height:1.8}
+/* 标题 */
+.section-title{font-size:20px;color:#2d3748;margin:0 0 24px 0;font-weight:400;border-bottom:1px solid #e8f4f8;padding-bottom:8px}
 </style>
 </head>
 
 <body>
 <header>
-    <h1>👶 翀扬的成长日记</h1>
-    <p>记录每一个闪闪发光的小日子</p>
+    <h1>翀扬的成长手记</h1>
+    <p class="subtitle">简单记录 · 温暖陪伴</p>
 </header>
 
 <div class="container">
+    <h2 class="section-title">每日记录</h2>
 
-<section class="section">
-    <h2>📸 成长瞬间</h2>
-    <div class="photo-grid">
-        <img src="https://picsum.photos/seed/liuchongyang1/400/400">
-        <img src="https://picsum.photos/seed/liuchongyang2/400/400">
+    <div class="update-card">
+        <div class="card-date">2026.03.14 周四</div>
+        <img class="card-photo" src="https://picsum.photos/seed/yang14/600/400" alt="翀扬日常">
+        <div class="card-text">今日小记：翀扬今天学会了翻书，一页一页慢慢翻，认真的样子特别可爱。傍晚和小伙伴在楼下玩，跑累了靠在我怀里睡着了～</div>
     </div>
-</section>
 
-<section class="section">
-    <h2>✍️ 成长记录</h2>
-    <div class="card">
-        <div class="date">2026.03.12</div>
-        <div>今天网站正式上线啦，属于翀扬独一无二的成长空间。</div>
+    <div class="update-card">
+        <div class="card-date">2026.03.13 周三</div>
+        <img class="card-photo" src="https://picsum.photos/seed/yang13/600/400" alt="翀扬日常">
+        <div class="card-text">今日小记：第一次清晰地喊出“妈妈”，是所有疲惫都被治愈的瞬间。</div>
     </div>
-    <div class="card">
-        <div class="date">2026.03.11</div>
-        <div>宝贝会自己拿杯子喝水啦，进步超明显～</div>
-    </div>
-</section>
 
+    <!-- 👇 新增记录复制模块修改 -->
 </div>
-
-<footer>© 2026 翀扬的成长日记 · 用爱记录每一天</footer>
-
 </body>
 </html>
